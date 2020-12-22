@@ -7,7 +7,7 @@ import { SentryAdapter } from '../infra/sentry-adapter'
 import { LogglyAdapter } from '../infra/loggly-adapter'
 import { FirebaseAdapter } from '../infra/firebase-adapter'
 import { GoogleAnalyticsAdapter } from '../infra/google-analytics-adapter'
-
+import { ErrorAnalyticsComposite } from '../infra/error-analytics-composite'
 
 export const makeLoginView = (): LoginView => {
   const sentryAdapter = new SentryAdapter()
